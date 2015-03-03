@@ -20,8 +20,10 @@ Accept-Encoding: gzip, deflate
 Accept-Language: en-US,en;q=0.8,hu;q=0.6
 Cookie: scratchlanguage=en; scratchsessionsid=; scratchcsrftoken=
 
-{"content":"Comment contents","parent_id":<comment ID of parent, if reply, otherwise "">,"commentee_id":<your user id if a reply, otherwise "">}
+{"content":"Comment contents","parent_id":<A>,"commentee_id":<B>}
 ```
+A: Normally just "", if posting a reply, use the numeric comment ID of the parent comment.  
+B: Normally just "", if posting a reply, use your numeric user ID. Not sure why this isn't required for non-replies.  
 Response: The comment chain posted on or created, as HTML.
 
 Comments: not sure why your user ID is required for replying but not for posting a new comment.
