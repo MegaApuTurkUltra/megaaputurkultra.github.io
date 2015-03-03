@@ -1,10 +1,11 @@
 # Scratch API reference #
 
+Just so I can stop capturing things with Fiddler all the time.
 Not sure if all of this is required, but just to be safe, include all the headers.
 
 ## Comments ##
 ## Posting ###
-'''http
+```http
 POST http://scratch.mit.edu/site-api/comments/project/<project id>/add/ HTTP/1.1
 Host: scratch.mit.edu
 Connection: keep-alive
@@ -20,13 +21,13 @@ Accept-Language: en-US,en;q=0.8,hu;q=0.6
 Cookie: scratchlanguage=en; scratchsessionsid=; scratchcsrftoken=
 
 {"content":"Comment contents","parent_id":<comment ID of parent, if reply, otherwise "">,"commentee_id":<your user id if a reply, otherwise "">}
-'''
+```
 Response: The comment chain posted on or created, as HTML.
 
 Comments: not sure why your user ID is required for replying but not for posting a new comment.
 
 ### Getting ###
-'''http
+```http
 GET http://scratch.mit.edu/site-api/comments/project/<project id>/?page=<page number> HTTP/1.1
 Host: scratch.mit.edu
 Connection: keep-alive
@@ -40,7 +41,7 @@ Accept-Language: en-US,en;q=0.8,hu;q=0.6
 Cookie: scratchlanguage=en; scratchsessionsid=; scratchcsrftoken=
 
 
-'''
+```
 Response: The specified page of comments, as HTML.
 
 # More soon! #
