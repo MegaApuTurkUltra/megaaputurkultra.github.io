@@ -24,20 +24,18 @@ Cookie: scratchlanguage=en; scratchsessionsid=; scratchcsrftoken=
 {"content":<A>,"parent_id":<B>,"commentee_id":<C>}
 ```
 Project ID: the project ID (duh)
-A: Your comment's contents
+A: Your comment's contents  
 B: Normally just "", if posting a reply, use the numeric comment ID of the parent comment.  
 C: Normally just "", if posting a reply, use the numeric ID of the user being replied to.  
 Response: Your comment, as HTML.
-
-Comments: not sure why your user ID is required for replying but not for posting a new comment.
 
 #### Getting ####
 Normal GET request to
 ```http
 http://scratch.mit.edu/site-api/comments/project/<project id>/?page=<page number>
 ```
-Project ID: The project ID
-Page number: The page of comments to get
+Project ID: The project ID  
+Page number: The page of comments to get  
 Response: The comments, as HTML.
 
 ### User profiles ###
@@ -60,8 +58,8 @@ Cookie: scratchlanguage=en; scratchsessionsid=; scratchcsrftoken=
 
 {"content":<A>,"parent_id":<B>,"commentee_id":<C>}
 ```
-Username: Who's profile to post to
-A: Your comment's contents
+Username: Who's profile to post to  
+A: Your comment's contents  
 B: Normally just "", if posting a reply, use the numeric comment ID of the parent comment.  
 C: Normally just "", if posting a reply, use the numeric ID of the user being replied to.  
 Response: Your comment, as HTML.
@@ -71,8 +69,8 @@ Normal GET request to
 ```http
 http://scratch.mit.edu/site-api/comments/user/<username>/?page=<page number>
 ```
-Username: Who to get profile comments from
-Page number: The page of comments to get
+Username: Who to get profile comments from  
+Page number: The page of comments to get  
 Response: The specified page of comments, as HTML.
 
 # More soon! #
