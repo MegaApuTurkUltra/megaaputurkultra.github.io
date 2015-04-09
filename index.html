@@ -15,7 +15,7 @@ h1, p { margin: 0; position: relative; top: -200px; background: rgba(0, 0, 0, 0.
 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);}
 div#main { perspective: 800px; }
 img#bg {
-    transition: all 0.5s;
+    transition: all 1s;
 }
 img#bg.flip {
   transform: scale(2) rotateY(360deg);
@@ -26,7 +26,7 @@ img#bg.flip {
 <body>
 <img id="load" src="http://i.cubeupload.com/3PG6GQ.gif" />
 <div id="main" style="display:none">
-  <img id="bg" src="http://i.cubeupload.com/oFOyir.png" alt="MegaApuTurkUltra logo" />
+  <img id="bg" class="flip" src="http://i.cubeupload.com/oFOyir.png" alt="MegaApuTurkUltra logo" />
   <h1>MegaApuTurkUltra</h1>
   <br/><br/>
   <p><a href="http://scratch.mit.edu/users/MegaApuTurkUltra">Scratch</a> | <a href="https://github.com/MegaApuTurkUltra">GitHub</a> | <a href="http://soundcloud.com/apubeats/">Soundcloud</a></p>
@@ -36,6 +36,7 @@ img#bg.flip {
   $("img#bg").on("load", function(){
     $("img#load").fadeOut(700, function(){
       $("div#main").fadeIn();
+      $("img#bg").removeClass("flip");
     });
   });
   $("a").click(function(){
