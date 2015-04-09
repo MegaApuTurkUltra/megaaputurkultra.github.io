@@ -13,6 +13,14 @@ a { color: white; text-decoration: underline; }
 a:hover { font-weight: bold; }
 h1, p { margin: 0; position: relative; top: -200px; background: rgba(0, 0, 0, 0.5); border-radius: 10px; padding: 1em; 
 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);}
+div#main { perspective: 800px; }
+img#bg {
+    transition: all 0.5s;
+}
+img#bg.flip {
+  transform: scale(2) rotateY(360deg);
+  opacity: 0;
+}
 </style>
 </head>
 <body>
@@ -29,6 +37,9 @@ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);}
     $("img#load").fadeOut(700, function(){
       $("div#main").fadeIn();
     });
+  });
+  $("a").click(function(){
+    $("img#bg").addClass("flip");
   });
 </script>
 </body>
