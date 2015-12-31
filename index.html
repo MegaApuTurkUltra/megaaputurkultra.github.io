@@ -47,12 +47,19 @@ div.row-bottom { padding: 0; }
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
-  $("img#bg").on("load", function(){
+  function init(){
     $("p#load").fadeOut(700, function(){
       $("div#main").fadeIn();
       $("img#bg").removeClass("flip");
     });
+  }
+
+  $("img#bg").on("load", function(){
+    init();
   });
+  
+  setTimeout(init, 2000); // just to be safe
+  
   $("a").click(function(){
     $("img#bg").addClass("flip");
   });
