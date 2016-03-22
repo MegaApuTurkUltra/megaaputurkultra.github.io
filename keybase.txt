@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/megaaputurkultra
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://aputurk.tk
+  * I am megaaputurkultra (https://keybase.io/megaaputurkultra) on keybase.
+  * I have a public key with fingerprint 2FF7 AC4A D6D2 7D71 A5FE  7430 8E3B E987 1B4A 06A1
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01010c9bca31a71bbce5795c4244d249c86ddaa9a5cd7fc669ba87a6686ecb23aa2d0a",
+            "fingerprint": "2ff7ac4ad6d27d71a5fe74308e3be9871b4a06a1",
+            "host": "keybase.io",
+            "key_id": "8e3be9871b4a06a1",
+            "kid": "01010c9bca31a71bbce5795c4244d249c86ddaa9a5cd7fc669ba87a6686ecb23aa2d0a",
+            "uid": "f83222e1c56834baf0a28b2cbccbc819",
+            "username": "megaaputurkultra"
+        },
+        "service": {
+            "hostname": "aputurk.tk",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1458654670,
+    "expire_in": 157680000,
+    "prev": "5715b56c29c5af48af87225cf46852f5f86097db0893a8e5bd5a1684f084bb7c",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.51
+Comment: https://keybase.io/crypto
+
+yMImAnicrVJZSFVBGD6alV4slSBJaPFQFiF2tpkz5yJiRfWUkYUvCZfZzvVw9Z67
+nGvqzTbCFqGihGjBSihDIlqoUAjNIorUihaCLAqisocoWiBaaI7YW4/NDAzzz/d9
+//f//DenTZICGT3DUpfyZC/NuHv9WEqq+bR6JC0TlzXLwbQc4eMXr2c86YUiDpOD
+sqKKTS1Csa5iUyWEcmBagBqaYTDNsCiCjGFsYUCZaVMILYKRiSFEkFOi6RhrTMFy
+qWw70TBPxBJO1BOymm2bmBqYQaaZzFQxsLlp6AriOuEWEokMrECsCmKdm/QZwhzB
+SV7muCImHqFxe//A/2ffqXE5G+mapnGVAoh0g2BbwRoiGiVUHKRaPjDJE1HcwAW6
+gYcxjqW8VCKSqvcSWG4tlcVvo0O532C/ognkBKrMiwiFWML1XOrWi3id58WCPs1r
+jvm4jZyEJhRCxIky0UxBaOSJpONG5aAqkNRzfEnVAAgCA5pKqcybYk6ChxwfAUyI
+FLH8NLxRSAJTBQRAqlkUYNtA2EampgFqGxABzQY2goplMqIgS8eIA8IAViEybAUZ
+hJhU9muKR105qAubOCwkk044ikU9XG4dHKjNkjIC0pTJmf6QSYGc/L+j19OULR1k
+OVd6Fse39NZc7nh/4+vPyo6mrlGvqHtF+6LGrdda491XF74dWlXa33okXTiY03Xr
+7I/jiz5sd2cPDgxve3op80T12IrLH5O5vy5kz63oKyoueV7xcFXd52vrCzqzDpdX
+Zhl3x3bnB37veazfh00lp07mWWO3G9wXgZGq2NOXTCpe11K+Kby0lufXHjiaFy1k
+0zc/Wrlparyza2RfVXrD91e9bLThXNuud0Mn+5ZkxHJnzDk791D8TdtpcuZbf+fa
+0a9l7efXLFtPTmUVFK2c83w3mjf/S3bHTLt65/K+e88+5j3MvNi9sIUsSKXxwQdS
+5YNz6PadqtctefsjsxbzpTvcGvkPHUFCIw==
+=e8qY
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/megaaputurkultra
+
+==================================================================
