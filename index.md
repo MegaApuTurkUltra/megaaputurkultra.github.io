@@ -1,7 +1,7 @@
 ---
 layout: page
 title: MegaApuTurkUltra
-tagline: Insert some cool tagline here
+tagline: Running a cool blog since yesterday!
 ---
 {% include JB/setup %}
 

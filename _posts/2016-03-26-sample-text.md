@@ -8,3 +8,5 @@ tags: [sample-text]
 {% include JB/setup %}
 
 Yay, a first post!
+
+It's a start ¯\_(ツ)_/¯
