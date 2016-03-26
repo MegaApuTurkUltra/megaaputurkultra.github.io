@@ -177,6 +177,7 @@ window.postload = function(){
 var searchInput = document.getElementById('search-input');
 if(searchInput != null){
   searchInput.value = location.pathname.replace(/[\/\-]/g, " ").trim();
+  window.repository.clear();
   SimpleJekyllSearch({
     searchInput: searchInput,
     resultsContainer: resultsContainer,
