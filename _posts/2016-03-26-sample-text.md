@@ -9,4 +9,4 @@ tags: [sample-text]
 
 Yay, a first post!
 
-It's a start ¯\_(ツ)_/¯
+It's a start ¯\\_(ツ)_/¯
