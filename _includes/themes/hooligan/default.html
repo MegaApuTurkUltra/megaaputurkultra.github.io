@@ -152,6 +152,15 @@
     <script src="/assets/vendor/jekyll-search.min.js" type="text/javascript"></script>
 <script>
 window.postload = function(){
+    if(window.hpsEnabled){
+        var as = document.getElementsByTagName("a");
+        for(var i = 0; i < as.length; i++){
+            if(as[i].hostname == "aputurk.tk"){
+                as[i].onclick = window.onhpslink;
+            }
+        }
+    }
+    
 var searchInput = document.getElementById('search-input');
 if(searchInput != null){
   searchInput.value = location.pathname.replace(/[\/\-]/g, " ").trim();
@@ -183,7 +192,36 @@ if(searchInput != null){
 }
 }
 
+window.hpsEnabled = !!history.pushState;
+function loadPage(pathname){
+    var xhr = new XMLHttpRequest();
+    xhr.onload = function() {
+        var title = this.responseXML.title;
+        var res = this.responseXML.getElementById("page-wrap").innerHTML;
+        document.title = title;
+        history.replaceState({}, title, pathname);
+        document.getElementById("page-wrap").innerHTML = res;
+        window.postload();
+    }
+    xhr.open("GET", pathname);
+    xhr.responseType = "document";
+    xhr.send();
+}
+window.onhpslink = function(e){
+    if(this.hostname == "aputurk.tk"){
+        e.preventDefault();
+        history.pushState({}, "", this.pathname);
+        loadPage(this.pathname);
+    }
+}
+if(window.hpsEnabled){
+    window.onpopstate = function(){
+        loadPage(location.pathname);
+    }
+}
 window.postload();
+
+
 </script>
 
     {% include JB/analytics %}
