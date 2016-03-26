@@ -12,11 +12,13 @@ tagline: Insert some cool tagline here
   <hr/>
 {% endfor %}
 
-<hr />
-
-<ul class="posts">
-  {% for post in site.posts offset:5 %}	
-    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-    <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> | {{ post.category }}</small></p>			
-  {% endfor %}	
-</ul>
+{% if site.posts.length > 5 %}
+  <hr />
+  
+  <ul class="posts">
+    {% for post in site.posts offset:5 %}	
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> | {{ post.category }}</small></p>			
+    {% endfor %}	
+  </ul>
+{% endif %}
