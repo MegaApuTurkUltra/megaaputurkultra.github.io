@@ -372,16 +372,15 @@ width: 100%;
               <span class="icon-bar"></span>
             </a>
 
-            <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+            <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}
+                  <div class='uil-spin-css' id="loader" style='-webkit-transform:scale(0.1)'><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div></div>
+            </a>
 
             <div class="nav-collapse">
               <ul class="nav">
                 {% assign pages_list = site.pages %}
                 {% assign group = 'navigation' %}
                 {% include JB/pages_list %}
-                <li>
-                  <div class='uil-spin-css' id="loader" style='-webkit-transform:scale(0.1)'><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div></div>
-                </li>
               </ul>
               <ul class="nav pull-right social visible-desktop">
                 <li class="divider-vertical"></li>
@@ -483,7 +482,7 @@ window.reparseLinks = function(){
 }
 
 window.postload = function(){
-    document.getElementById("loader").style.display = "none";
+    document.getElementById("loader").style.opacity = 0;
     reparseLinks();
     
     var resultsContainer = document.getElementById('results-container');
@@ -530,7 +529,7 @@ if(searchInput != null){
 window.hpsEnabled = !!history.pushState;
 window.loadPage = function(pathname){
     var to = setTimeout(function(){
-        document.getElementById("loader").style.display = "block";
+        document.getElementById("loader").style.opacity = 1;
     }, 200);
     var xhr = new XMLHttpRequest();
     xhr.onload = function() {
