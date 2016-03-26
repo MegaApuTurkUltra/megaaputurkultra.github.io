@@ -96,6 +96,20 @@
                   </a>
                 </li>
                 {% endif %}
+                {% if site.author.scratch %}
+                <li>
+                  <a href="https://scratch.mit.edu/{{ site.author.scratch }}" class="zocial primary icon" target="_blank">
+                    <span class="hidden-desktop">Scratch</span>
+                  </a>
+                </li>
+                {% endif %}
+                {% if site.author.soundcloud %}
+                <li>
+                  <a href="https://soundcloud.com/{{ site.author.soundcloud }}" class="zocial soundcloud icon" target="_blank">
+                    <span class="hidden-desktop">Soundcloud</span>
+                  </a>
+                </li>
+                {% endif %}
               </ul>
             </div>
           </div>
