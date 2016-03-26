@@ -9,6 +9,7 @@ tagline: Running a cool blog since yesterday!
   <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
   <p>{{ post.date | date: "%d %B %Y" }}</p>
   <div>{{ post.content}}</div>
+  <a href="{{ post.url }}">Full post &amp; comments &rarr;</a>
   {% unless forloop.last %}<hr/>{% endunless %}
 {% endfor %}
 
