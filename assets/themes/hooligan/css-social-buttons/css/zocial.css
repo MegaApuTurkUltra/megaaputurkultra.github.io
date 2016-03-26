@@ -21,6 +21,19 @@ Enjoy
 	unicode-range: U+0-U+10FFFF;
 }
 
+@font-face {
+    font-family: 'scratchfontregular';
+    src: url('scr-webfont.eot');
+    src: url('scr-webfont.eot?#iefix') format('embedded-opentype'),
+         url('scr-webfont.woff2') format('woff2'),
+         url('scr-webfont.woff') format('woff'),
+         url('scr-webfont.ttf') format('truetype'),
+         url('scr-webfont.svg#scratchfontregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /* Button structure */
 
 .zocial,
@@ -70,6 +83,11 @@ a.zocial {
 	box-shadow: 0.075em 0 0 rgba(255,255,255,0.25);
 	
 	-webkit-font-smoothing: antialiased;
+}
+
+.zocial.scratch:before {
+    content: "S";
+    font: 120%/1.65 scratchfontregular;
 }
 
 .zocial:active {
