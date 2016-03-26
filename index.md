@@ -1,12 +1,14 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: MegaApuTurkUltra
+tagline: Insert some cool tagline here
 ---
 {% include JB/setup %}
 
 <ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+  {% for post in site.posts limit:5 %}
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p>{{ post.date | date: "%d %B %Y" }}</p>
+    <div>{{ post.content}}</div>
   {% endfor %}
 </ul>
