@@ -42,11 +42,10 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#1169AA">
       
-<style type='text/css'> .uil-spin-css {
-  background: none;
-  position: relative;
-  width: 200px;
-  height: 200px;
+<style type='text/css'>
+.uil-spin-css {
+  width: 20px;
+  height: 20px;
 }
 width: 100%;
 @-webkit-keyframes uil-spin-css {
@@ -381,7 +380,7 @@ width: 100%;
                 {% assign group = 'navigation' %}
                 {% include JB/pages_list %}
                 <li>
-                  <div class='uil-spin-css' style='-webkit-transform:scale(0.1)'><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div></div>
+                  <div class='uil-spin-css' id="loader" style='-webkit-transform:scale(0.1)'><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div></div>
                 </li>
               </ul>
               <ul class="nav pull-right social visible-desktop">
@@ -483,7 +482,10 @@ window.reparseLinks = function(){
     }
 }
 
+var loader = document.getElementById("loader");
+
 window.postload = function(){
+    loader.style.display = "none";
     reparseLinks();
     
     var resultsContainer = document.getElementById('results-container');
@@ -529,8 +531,12 @@ if(searchInput != null){
 
 window.hpsEnabled = !!history.pushState;
 window.loadPage = function(pathname){
+    var to = setTimeout(function(){
+        loader.style.display = "block";
+    }, 200);
     var xhr = new XMLHttpRequest();
     xhr.onload = function() {
+        clearTimeout(to);
         var title = this.responseXML.title;
         var res = this.responseXML.getElementById("page-wrap").innerHTML;
         document.title = title;
