@@ -149,6 +149,38 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="{{ ASSET_PATH }}/js/jquery.min.js"><\/script>')</script>
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/vendor/jekyll-search.min.js" type="text/javascript"></script>
+<script>
+var searchInput = document.getElementById('search-input
+if(searchInput != null){
+  searchInput.value = location.pathname.replace(/[\/\-]/g, " ").trim();
+  SimpleJekyllSearch({
+    searchInput: searchInput,
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+  });
+
+  setTimeout(function(){
+    var event;
+  
+    if (document.createEvent) {
+      event = document.createEvent("HTMLEvents");
+      event.initEvent("keyup", true, true);
+    } else {
+      event = document.createEventObject();
+      event.eventType = "keyup";
+    }
+  
+    event.eventName = "keyup";
+  
+    if (document.createEvent) {
+      searchInput.dispatchEvent(event);
+    } else {
+      searchInput.fireEvent("on" + event.eventType, event);
+    }
+  }, 500);
+}
+</script>
 
     {% include JB/analytics %}
   </body>
