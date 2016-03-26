@@ -2,7 +2,7 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title 
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "demo/", "ScratchTools/", "scratchapi/", "CNAME", "keybase.txt", ".well-known/"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME"]
 highlighter: rouge
 
 # Themes are encouraged to use these universal variables 
