@@ -161,16 +161,18 @@ window.reparseLinks = function(){
         }
     }
 }
+
 window.postload = function(){
     reparseLinks();
     
     var resultsContainer = document.getElementById('results-container');
-    var observer = new MutationObserver(function(mutations) {
-       reparseLinks();
-    });
-    var config = { attributes: true, childList: true, characterData: true };
-    observer.observe(resultsContainer, config);
- 
+    if(resultsContainer != null){
+        var observer = new MutationObserver(function(mutations) {
+            reparseLinks();
+        });
+        var config = { attributes: true, childList: true, characterData: true };
+        observer.observe(resultsContainer, config);
+    }
     
 var searchInput = document.getElementById('search-input');
 if(searchInput != null){
