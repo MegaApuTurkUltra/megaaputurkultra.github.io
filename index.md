@@ -9,7 +9,7 @@ tagline: Insert some cool tagline here
   <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
   <p>{{ post.date | date: "%d %B %Y" }}</p>
   <div>{{ post.content}}</div>
-  <hr/>
+  {% unless forloop.last %}<hr/>{% endunless %}
 {% endfor %}
 
 {% if site.posts.length > 5 %}
