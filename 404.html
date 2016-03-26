@@ -6,5 +6,38 @@ group: navigation
 ---
 {% include JB/setup %}
 
-<h2>404</h2>
 <p>Page not found</p>
+
+<div id="search-container">
+<input type="text" id="search-input" placeholder="Search" />
+<ul id="results-container"></ul>
+</div>
+
+<script src="/assets/vendor/jekyll-search.min.js" type="text/javascript"></script>
+<script>
+  var searchInput = document.getElementById('search-input');
+  searchInput.value = location.pathname.replace(/[\/\-]/g, " ");
+  SimpleJekyllSearch({
+    searchInput: searchInput,
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+  });
+
+  var event;
+
+  if (document.createEvent) {
+    event = document.createEvent("HTMLEvents");
+    event.initEvent("keyup", true, true);
+  } else {
+    event = document.createEventObject();
+    event.eventType = "keyup";
+  }
+
+  event.eventName = "keyup";
+
+  if (document.createEvent) {
+    searchInput.dispatchEvent(event);
+  } else {
+    searchInput.fireEvent("on" + event.eventType, event);
+  }
+</script>
