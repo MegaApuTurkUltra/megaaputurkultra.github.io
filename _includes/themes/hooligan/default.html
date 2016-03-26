@@ -482,10 +482,8 @@ window.reparseLinks = function(){
     }
 }
 
-var loader = document.getElementById("loader");
-
 window.postload = function(){
-    loader.style.display = "none";
+    document.getElementById("loader").style.display = "none";
     reparseLinks();
     
     var resultsContainer = document.getElementById('results-container');
@@ -532,7 +530,7 @@ if(searchInput != null){
 window.hpsEnabled = !!history.pushState;
 window.loadPage = function(pathname){
     var to = setTimeout(function(){
-        loader.style.display = "block";
+        document.getElementById("loader").style.display = "block";
     }, 200);
     var xhr = new XMLHttpRequest();
     xhr.onload = function() {
