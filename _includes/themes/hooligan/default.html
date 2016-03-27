@@ -538,6 +538,8 @@ window.reloadDQ = function(){
         dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
+    
+    DISQUSWIDGETS.getCount({reset: true});
 }
 
 window.hpsEnabled = !!history.pushState;
@@ -563,8 +565,8 @@ window.loadPage = function(pathname){
 window.onhpslink = function(e){
     if(this.hostname == "aputurk.tk"){
         e.preventDefault();
-        history.pushState({}, "", this.pathname);
-        window.loadPage(this.pathname);
+        history.pushState({}, "", this.pathname + this.hash);
+        window.loadPage(this.pathname + this.hash);
     }
 }
 if(window.hpsEnabled){
@@ -578,5 +580,6 @@ window.postload();
 </script>
 
     {% include JB/analytics %}
+    <script id="dsq-count-scr" src="//EXAMPLE.disqus.com/count.js" async></script>
   </body>
 </html>

@@ -9,7 +9,7 @@ tagline: Running a cool blog since yesterday!
   <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
   <p>{{ post.date | date: "%d %B %Y" }}</p>
   <div>{{ post.content}}</div>
-  <a href="{{ post.url }}">Full post &amp; comments &rarr;</a>
+  <a href="{{ post.url }}#disqus_thread">Comments</a>
   {% unless forloop.last %}<hr/>{% endunless %}
 {% endfor %}
 
@@ -19,7 +19,7 @@ tagline: Running a cool blog since yesterday!
   <ul class="posts">
     {% for post in site.posts offset:5 %}	
       <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> | {{ post.category }}</small></p>			
+      <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> | {{ post.category }} | <a href="{{ post.url }}#disqus_thread">Comments</a></small></p>			
     {% endfor %}	
   </ul>
 {% endif %}
