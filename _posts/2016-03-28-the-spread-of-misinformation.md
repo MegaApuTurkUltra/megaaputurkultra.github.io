@@ -9,7 +9,9 @@ tags: []
 
 Recently, I came across this video via friends at OpenSprites:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BUZr0Wr0v-s" frameborder="0" allowfullscreen></iframe>
+<div class="videoWrapper" style="position: relative;padding-bottom: 56.25%;padding-top: 25px;height: 0;">
+    <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" width="560" height="315" src="https://www.youtube.com/embed/BUZr0Wr0v-s" frameborder="0" allowfullscreen></iframe>
+</div>
 
 I stopped watching at around 1:30.
 
