@@ -19,14 +19,14 @@ The same cannot be said for some commenters on the video and most upvoters. And 
 
 ![Image of comment on that video](http://i.imgur.com/Tj8R0H2.png)
 
-### Your middle school librarian's worst nightmare ###
+## Your middle school librarian's worst nightmare ##
 
 Remember how you're supposed to validate online sources? Stay unbiased? These are things anyone who's been through middle school should have learned. You don't just believe anything you see on the Internet, as people emphasize by humorously misquoting historical figures. I'm sure everyone who upvoted or commented on that video knew that the Internet is unreliable. So then, why did they believe this YouTube video, of all things, without a single doubt?
 
 It's a combination of psuedoscience and bias. First, psuedoscience: the same sort of nonsensical statements people spread about "X chemical being in your food and also in industrial whatnot." I'm sure you've seen it. The issue is that it's so believable to people at first glance. It seems like results from some sort of legitimate study or experiment, when really it's just some guy on the Internet compiling dodgy evidence and acting like it's significant.  
 There's another part to it: bias. If people start slightly leaning towards one side of something, they're inclined to accept evidence from that side even if it's a stretch, and reject all evidence from the other side, no matter how conclusive it might be. This is, again, something we see over and over on the Internet. In the case of that video, it might be because non-Americans are envious, or Americans are dissatisfied with the government that they jump so quickly on the video as "conclusive evidence" that Apollo was faked. But they completely ignore the piles of evidence in favor of Apollo (the retroreflective mirror that's now placed on the moon, the samples brought back, the landing sites you can see with powerful telescopes...).
 
-### Trolling the "sheeple" ###
+## Trolling the "sheeple" ##
 
 When people call Internet-browsers "sheeple," it might be insulting but it's not exactly wrong. As we see, people's opinions can easily be played to start arguments (eg: the current state of the comments section on that video). The issue is, content creators *know this*. We can easily find evidence that the uploader of this video was a troll. Just read the description, to start:
 
