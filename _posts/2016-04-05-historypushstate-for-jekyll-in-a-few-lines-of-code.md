@@ -80,5 +80,5 @@ Because we can't change what Jekyll serves, it's impossible to prevent loading t
 
 ---
 
-On a more off-topic note: here's the GIF I made for Zro's April 1st "maymays" thread on the A(O)Ts, if anyone wants it:
+On a more off-topic note: here's the GIF I made for Zro's April 1st "maymays" thread on the A(O)Ts, if anyone wants it:  
 ![Thisandagain-themed deal with it GIF](http://i63.tinypic.com/10ef1ad.gif)
