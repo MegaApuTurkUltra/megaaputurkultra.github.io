@@ -2,8 +2,8 @@
 layout: post
 title: "history.pushState for Jekyll in a few lines of code"
 description: ""
-category: 
-tags: [code-snippet]
+category: code-snippet
+tags: [code-snippet, random-gif]
 ---
 {% include JB/setup %}
 

@@ -3,7 +3,7 @@ layout: post
 title: "The spread of misinformation"
 description: ""
 category: post
-tags: []
+tags: [post]
 ---
 {% include JB/setup %}
 
