@@ -83,7 +83,7 @@ Now, to make sure that your cloud variable *is* updated even if the psuedo-vars 
 <pre class="blocks">
 add (username) to [my list v]
 add (pick random (0.01) to (1.01)) to [my list v]
-// add all the psuedo-vars
+add all the psuedo-vars::grey
 encode::custom
 </pre>
 
