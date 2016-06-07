@@ -87,9 +87,9 @@ add all the psuedo-vars::grey
 encode::custom
 </pre>
 
-Update time is kept track of using the
-<pre class="inline-blocks">(days since 2000)</pre>
-block, so the timer is free for other usage.
+Update time is kept track of using the <pre class="inline-blocks">
+(days since 2000)
+</pre> block, so the timer is free for other usage.
 
 ### Sending and receiving data ###
 
