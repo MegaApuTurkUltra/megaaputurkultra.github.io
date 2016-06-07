@@ -51,6 +51,15 @@
         text-shadow: none;
     }
     
+    pre.inline-blocks {
+        text-shadow: none;
+        box-shadow: none;
+        background: 0;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+    
 .uil-spin-css {
     width: 20px;
     height: 20px;
@@ -499,6 +508,7 @@ window.postload = function(){
     reparseLinks();
     
     scratchblocks.renderMatching("pre.blocks");
+    scratchblocks.renderMatching("pre.inline-blocks", {inline: true});
     
     var resultsContainer = document.getElementById('results-container');
     if(resultsContainer != null){
