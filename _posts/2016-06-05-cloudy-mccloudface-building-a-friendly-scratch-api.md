@@ -2,8 +2,8 @@
 layout: post
 title: "Cloudy McCloudFace: Building a friendly Scratch API"
 description: ""
-category: 
-tags: []
+category: scratch
+tags: [scratch, api, project, cloud]
 ---
 {% include JB/setup %}
 
