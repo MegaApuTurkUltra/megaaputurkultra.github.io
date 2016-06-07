@@ -45,7 +45,9 @@ In terms of function, CMCF is very similar to what I did in [Jetski Escape](http
 
 For cloud list encoding and decoding, I essentially built a new cloud list engine from Scratch (pun intended - heh). It's very concise (if you don't count the sprite that contains all the ascii code variables)
 
-![cmcf.decode block](http://image.prntscr.com/image/e77e28f744dc47a6b70a4958dc5794fc.png) ![cmcf.encode block](http://image.prntscr.com/image/c4b604b7a3cd4a6bbedce5de09328c36.png)
+![cmcf.decode block](http://image.prntscr.com/image/e77e28f744dc47a6b70a4958dc5794fc.png)
+
+![cmcf.encode block](http://image.prntscr.com/image/c4b604b7a3cd4a6bbedce5de09328c36.png)
 
 cmcf.encoder is a sprite that contains 2 types of variables for all ascii characters in the range 0-127
 
