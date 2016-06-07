@@ -18,9 +18,11 @@ This post will basically go over how it works and the design of what I consider 
 ## The API ##
 
 The API itself is somewhat self explanatory. The two major premises behind it are using callbacks and (ab)using Scratch variables as a hashmap. For example, in Javascript you might see an API like this
+
 ```javascript
 connectToServer(function success(){}, function error(){})
 ```
+
 Similarly, CMCF uses callbacks for connection success and error.
 
 The hashmap part is the way the API handles cloud data. Basically, there are psuedo-variables that each connected multiplayer user has a copy of. You set your own copy of your psuedo-vars, and recieve them from other players. For example, for a 2d game you might have the psuedo-vars "x position," "y position," and "direction." These are the variables that are cloud-list-encoded into each user's cloud variable. To make the API easy to use, I wanted to allow naming these variables instead of simply indexing into the encoding list. So instead of
